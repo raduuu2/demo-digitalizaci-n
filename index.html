@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo Proyecto, sitio de demostración sobre diseño y desarrollo web.">
+  <title>Inicio | Demo Proyecto</title>
+  <!-- Primero Bootstrap, después los estilos del proyecto. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
+  <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span> Demo Proyecto
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto gap-md-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" tabindex="-1">
+    <!-- Hero con dos columnas a partir de pantallas grandes. -->
+    <section class="hero" aria-labelledby="titulo-inicio">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <h1 id="titulo-inicio" class="hero-title">Diseñamos webs <span>fáciles de usar.</span></h1>
+            <p class="intro mt-4 mb-4">
+              Creamos sitios claros, accesibles y adaptados a cada pantalla.
+            </p>
+            <a class="btn btn-accent btn-lg" href="servicios.html">
+              Explorar servicios <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <!-- Sustituye la imagen de ejemplo y actualiza su texto alternativo. -->
+            <div class="hero-media">
+              <img src="img/estudio-demo.jpg" width="1280" height="854" class="img-fluid"
+                   alt="Pasillo de un estudio con salas acristaladas">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Una columna en móvil y tres a partir del breakpoint md. -->
+    <section class="section-space" aria-labelledby="titulo-areas">
+      <div class="container">
+        <h2 id="titulo-areas" class="section-title mb-4">Qué hacemos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4">
+          <div class="col">
+            <article class="card service-card h-100">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold">Diseño de interfaces</h3>
+                <p class="mb-0">Damos forma a pantallas que ayudan a encontrar la información y completar tareas.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card service-card h-100">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold">Desarrollo web</h3>
+                <p class="mb-0">Convertimos el diseño en páginas que se adaptan a móviles, tablets y ordenadores.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card service-card h-100">
+              <div class="card-body p-4">
+                <h3 class="h5 fw-bold">Accesibilidad</h3>
+                <p class="mb-0">Revisamos la legibilidad, los contrastes y la navegación con teclado.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie común a las tres páginas. -->
+  <footer class="site-footer mt-auto">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
+      <span class="fw-semibold">Demo Proyecto</span>
+      <small>Sitio de demostración</small>
+    </div>
+  </footer>
+
+  <!-- El bundle activa los componentes con atributos data-bs-*. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+          crossorigin="anonymous"></script>
+</body>
+</html>

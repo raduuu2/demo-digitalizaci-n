@@ -1,0 +1,228 @@
+/* Tema compartido por las tres páginas. */
+:root {
+  --ink: #24223a;
+  --muted: #514e65;
+  --accent: #5534bc;
+  --accent-dark: #41249b;
+  --lavender: #f1edfc;
+  --border: #ddd8e8;
+  --nav-height: 4.5rem;
+}
+
+body {
+  padding-top: var(--nav-height);
+  color: var(--ink);
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 1040;
+  top: .5rem;
+  left: .5rem;
+  padding: .5rem 1rem;
+  background: #fff;
+  color: var(--accent-dark);
+}
+
+/* La altura de la barra fija se compensa en el body. */
+.site-nav {
+  min-height: var(--nav-height);
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  color: var(--ink);
+  font-weight: 750;
+  letter-spacing: -.035em;
+}
+
+.brand-mark {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: .35rem .35rem .35rem 0;
+  background: linear-gradient(145deg, var(--accent) 54%, #c5b4f6 55%);
+}
+
+.site-nav .nav-link {
+  padding: .5rem .8rem;
+  border-radius: .45rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link.active {
+  background: var(--lavender);
+  color: var(--accent-dark);
+}
+
+.site-nav .navbar-toggler {
+  border-color: var(--border);
+}
+
+.site-nav .navbar-toggler:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.site-footer {
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--border);
+  background: #faf9fc;
+  color: var(--muted);
+}
+
+/* Las clases de Bootstrap resuelven la cuadrícula y los espaciados menores. */
+.hero {
+  padding-block: clamp(3rem, 6vw, 6rem);
+  background: linear-gradient(120deg, #f8f5ff, #ede7fb);
+}
+
+.hero-title,
+.page-title,
+.section-title {
+  font-weight: 800;
+  letter-spacing: -.055em;
+}
+
+.hero-title {
+  max-width: 12ch;
+  margin: 0;
+  font-size: clamp(2.65rem, 6.3vw, 5.2rem);
+  line-height: 1.02;
+}
+
+.hero-title span {
+  color: var(--accent);
+}
+
+.intro {
+  max-width: 48ch;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+}
+
+.hero-media {
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: #dcd2f1;
+  box-shadow: 0 16px 36px rgb(36 27 66 / 16%);
+}
+
+.hero-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Variables de Bootstrap para conservar los estados del botón. */
+.btn-accent {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--accent-dark);
+  --bs-btn-hover-border-color: var(--accent-dark);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--accent-dark);
+  --bs-btn-active-border-color: var(--accent-dark);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--accent);
+  --bs-btn-disabled-border-color: var(--accent);
+  --bs-btn-focus-shadow-rgb: 85, 52, 188;
+  --bs-btn-font-weight: 650;
+  padding: .65rem 1.15rem;
+}
+
+.btn-accent span {
+  margin-inline-start: .35rem;
+}
+
+.section-space {
+  padding-block: clamp(2.75rem, 6vw, 5rem);
+}
+
+.section-title {
+  font-size: clamp(1.85rem, 4vw, 2.7rem);
+}
+
+.service-card,
+.contact-card {
+  --bs-card-border-color: var(--border);
+  --bs-card-border-radius: 1rem;
+}
+
+.service-card {
+  border-top: 3px solid #aa94e6;
+}
+
+.service-card p,
+.contact-card .small {
+  color: var(--muted);
+}
+
+.page-intro {
+  padding-block: clamp(3rem, 6vw, 5rem);
+  background: var(--lavender);
+}
+
+.page-title {
+  margin-bottom: 1rem;
+  font-size: clamp(2.65rem, 6.3vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.service-accordion {
+  --bs-accordion-color: var(--ink);
+  --bs-accordion-border-color: var(--border);
+  --bs-accordion-btn-color: var(--ink);
+  --bs-accordion-active-bg: var(--lavender);
+  --bs-accordion-active-color: var(--accent-dark);
+  --bs-accordion-btn-focus-box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.service-accordion .accordion-button,
+.form-label {
+  font-weight: 650;
+}
+
+.contact-section {
+  background: linear-gradient(145deg, var(--lavender), #fff 75%);
+}
+
+.contact-card {
+  box-shadow: 0 16px 32px rgb(36 27 66 / 8%);
+}
+
+.form-control {
+  border-color: #9791a9;
+}
+
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 .2rem rgb(85 52 188 / 18%);
+}
+
+@media (max-width: 767.98px) {
+  .site-nav .navbar-collapse {
+    max-height: calc(100dvh - var(--nav-height));
+    overflow-y: auto;
+  }
+
+  .site-nav .navbar-nav {
+    padding-block: .5rem;
+  }
+}

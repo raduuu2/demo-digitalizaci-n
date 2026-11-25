@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Los seis hitos tecnológicos de YouTube desde 2005 y cómo cambió el proceso de gestión de derechos de autor con Content ID.">
+  <title>Evolución | YouTube: de 2005 a hoy</title>
+  <!-- Primero Bootstrap, después los estilos del proyecto. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+        crossorigin="anonymous">
+  <!-- Tipografías: Montserrat para los titulares y Roboto (la de YouTube) para el texto. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
+  <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span> YouTube: de 2005 a hoy
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+              aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto gap-md-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="evolucion.html" aria-current="page">Evolución</a></li>
+          <li class="nav-item"><a class="nav-link" href="organizacion.html">Organización y mercados</a></li>
+          <li class="nav-item"><a class="nav-link" href="canales.html">Canales top</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenido" tabindex="-1">
+    <header class="page-intro">
+      <div class="container">
+        <h1 class="page-title">Evolución tecnológica</h1>
+        <p class="intro mb-0">
+          Seis hitos que explican cómo la tecnología cambió la forma de trabajar, vender y generar valor de YouTube.
+          En tres de ellos cambió un proceso completo.
+        </p>
+      </div>
+    </header>
+
+    <!-- Infografía generada en la Fase 2. -->
+    <section class="section-space pb-0" aria-labelledby="titulo-infografia">
+      <div class="container">
+        <h2 id="titulo-infografia" class="section-title mb-4">La línea del tiempo</h2>
+        <figure class="figure-card mb-0">
+          <a href="img/infografia-evolucion.jpg" target="_blank" rel="noopener">
+            <img src="img/infografia-evolucion.jpg" width="1800" height="1005" class="img-fluid" loading="lazy"
+                 alt="Infografía con seis hitos: 2005 reproductor Flash, 2007 Content ID, 2010-2015 migración a HTML5, 2011 YouTube Live, 2015-2016 recomendación por IA y 2020-2026 Shorts e IA generativa">
+          </a>
+          <figcaption>
+            Infografía «Evolución tecnológica de YouTube». Fuentes: about.youtube, How YouTube Works, Ayuda de YouTube,
+            YouTube Engineering Blog, Google Research, blog.youtube y dossier propio. Herramienta: NotebookLM. Revisada frente al dossier.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-space" aria-labelledby="titulo-hitos">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-4">
+            <h2 id="titulo-hitos" class="section-title">Los hitos, uno a uno</h2>
+            <p class="text-muted-ink">Despliega cada hito para ver qué cambió, qué necesidad cubría y qué resultado tuvo.</p>
+          </div>
+          <div class="col-lg-8">
+            <!-- Cada botón apunta al id único de su panel plegable. -->
+            <div class="accordion service-accordion" id="acordeonHitos">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#h2005" aria-expanded="true" aria-controls="h2005">
+                    <span class="year-tag">2005</span> Lanzamiento de la web con reproductor Flash 
+                  </button>
+                </h3>
+                <div id="h2005" class="accordion-collapse collapse show" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p><strong>Qué cambió:</strong> Se lanzó una web donde cualquier persona podía subir un vídeo y verlo directamente en el navegador, sin descargar el archivo ni tener servidores propios. La reproducción se hacía con Adobe Flash Player.</p>
+                    <p><strong>Qué necesidad atendía:</strong> Compartir vídeos en internet era muy difícil: los archivos pesaban demasiado para el correo y necesitaban programas externos.</p>
+                    <p class="mb-0"><strong>Resultado:</strong> Crecimiento viral: en el verano de 2006 ya se subían unos 65.000 vídeos al día, con 100 millones de visualizaciones diarias. En octubre de 2006 Google compró la empresa.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#h2007" aria-expanded="false" aria-controls="h2007">
+                    <span class="year-tag">2007</span> Content ID: derechos de autor automáticos <span class="badge-proceso">Cambió un proceso</span>
+                  </button>
+                </h3>
+                <div id="h2007" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p><strong>Qué cambió:</strong> Una herramienta que escanea cada vídeo al subirlo y lo compara con una base de datos de archivos protegidos por derechos de autor.</p>
+                    <p><strong>Qué necesidad atendía:</strong> Evitar demandas millonarias, como la de Viacom en 2007, y permitir que los dueños de los derechos ganaran dinero con los vídeos de los fans en lugar de borrarlos.</p>
+                    <p class="mb-0"><strong>Resultado:</strong> Menos demandas legales y una nueva fuente de ingresos para la industria musical y audiovisual.</p>
+                    <div class="row g-2 mt-1">
+                      <div class="col-sm-6"><div class="ad-box ad-before"><span>Antes</span>Las discográficas y estudios buscaban a mano los vídeos pirateados y enviaban una solicitud legal por cada vídeo para que YouTube lo retirara.</div></div>
+                      <div class="col-sm-6"><div class="ad-box ad-after"><span>Después</span>El sistema revisa cada vídeo en segundos al subirlo y aplica la regla que elige el dueño: bloquearlo, ver sus estadísticas o dejarlo publicado y quedarse con los ingresos de los anuncios.</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#h2010" aria-expanded="false" aria-controls="h2010">
+                    <span class="year-tag">2010–2015</span> Del reproductor Flash a HTML5 <span class="badge-proceso">Cambió un proceso</span>
+                  </button>
+                </h3>
+                <div id="h2010" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p><strong>Qué cambió:</strong> YouTube empezó a probar HTML5 en 2010 y en enero de 2015 lo convirtió en su reproductor por defecto, abandonando el complemento Flash.</p>
+                    <p><strong>Qué necesidad atendía:</strong> Flash tenía problemas de seguridad, consumía mucha batería y no funcionaba en muchos móviles y tabletas, como el iPhone o el iPad.</p>
+                    <p class="mb-0"><strong>Resultado:</strong> Compatibilidad con móviles, menor consumo y vídeos que ajustan su calidad automáticamente a la velocidad de la conexión.</p>
+                    <div class="row g-2 mt-1">
+                      <div class="col-sm-6"><div class="ad-box ad-before"><span>Antes</span>Para ver un vídeo, el navegador tenía que ejecutar un programa externo que consumía mucha memoria y no funcionaba en muchos teléfonos.</div></div>
+                      <div class="col-sm-6"><div class="ad-box ad-after"><span>Después</span>El propio navegador reproduce el vídeo sin complementos y adapta la calidad de imagen a la velocidad de internet del usuario.</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#h2011" aria-expanded="false" aria-controls="h2011">
+                    <span class="year-tag">2011</span> YouTube Live: los directos 
+                  </button>
+                </h3>
+                <div id="h2011" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p><strong>Qué cambió:</strong> Se incorporó la retransmisión en directo en los canales de los creadores, con chat en tiempo real.</p>
+                    <p><strong>Qué necesidad atendía:</strong> Ver eventos en directo (noticias, conciertos, deportes o videojuegos) sin depender de la televisión ni de otras plataformas.</p>
+                    <p class="mb-0"><strong>Resultado:</strong> Récords de audiencia simultánea, como el salto de Felix Baumgartner en 2012, con unos 8 millones de espectadores en directo, y nuevas formas de ingresos como los Super Chats.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#h2015" aria-expanded="false" aria-controls="h2015">
+                    <span class="year-tag">2015–2016</span> Recomendaciones con inteligencia artificial <span class="badge-proceso">Cambió un proceso</span>
+                  </button>
+                </h3>
+                <div id="h2015" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p><strong>Qué cambió:</strong> YouTube sustituyó su sistema de recomendaciones basado en clics y reglas sencillas por redes neuronales profundas (deep learning) desarrolladas con Google Brain.</p>
+                    <p><strong>Qué necesidad atendía:</strong> Elegir, entre miles de millones de vídeos, los más adecuados para cada persona y aumentar el tiempo que pasa en la plataforma.</p>
+                    <p class="mb-0"><strong>Resultado:</strong> Recomendaciones personalizadas para cada usuario. Los ingenieros de YouTube explicaron el sistema en un artículo de Google Research en 2016.</p>
+                    <div class="row g-2 mt-1">
+                      <div class="col-sm-6"><div class="ad-box ad-before"><span>Antes</span>Las recomendaciones se basaban sobre todo en los clics y en reglas básicas, iguales para todos.</div></div>
+                      <div class="col-sm-6"><div class="ad-box ad-after"><span>Después</span>Una red neuronal analiza el historial de cada persona y le propone los vídeos que tiene más probabilidades de ver.</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#h2020" aria-expanded="false" aria-controls="h2020">
+                    <span class="year-tag">2020–2026</span> Shorts e IA generativa 
+                  </button>
+                </h3>
+                <div id="h2020" class="accordion-collapse collapse" data-bs-parent="#acordeonHitos">
+                  <div class="accordion-body">
+                    <p><strong>Qué cambió:</strong> En septiembre de 2020 llegó Shorts, un formato de vídeo vertical y corto que se graba desde el móvil. Desde 2023 se suman herramientas de IA generativa para crear fondos, editar y doblar vídeos a otros idiomas.</p>
+                    <p><strong>Qué necesidad atendía:</strong> Competir con TikTok e Instagram Reels y facilitar que cualquiera cree vídeos atractivos desde el teléfono.</p>
+                    <p class="mb-0"><strong>Resultado:</strong> Shorts pasó de 70.000 millones de visualizaciones diarias en 2024 a más de 200.000 millones en junio de 2025, según el CEO de YouTube, Neal Mohan, y ha atraído a millones de nuevos creadores.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Esquema antes/después de la Fase 2. -->
+    <section class="section-space section-alt" aria-labelledby="titulo-proceso">
+      <div class="container">
+        <h2 id="titulo-proceso" class="section-title mb-2">Un proceso, antes y después: Content ID</h2>
+        <p class="intro mb-4">
+          Cómo cambió la gestión de los derechos de autor en YouTube a partir de 2007: de una tarea manual,
+          lenta y llena de demandas, a un sistema automático que además genera ingresos.
+        </p>
+        <figure class="figure-card mb-4">
+          <a href="img/esquema-content-id.jpg" target="_blank" rel="noopener">
+            <img src="img/esquema-content-id.jpg" width="1800" height="1005" class="img-fluid" loading="lazy"
+                 alt="Esquema comparativo del antes y el después de Content ID en cuatro filas: tarea, tecnología, información que circula y qué cambió para las personas">
+          </a>
+          <figcaption>
+            Esquema «Antes y después de Content ID». Fuentes: Ayuda de YouTube (Cómo funciona Content ID), How YouTube Works (Copyright)
+            y ficha del hito del dossier. Herramienta: NotebookLM. Revisado frente al dossier.
+          </figcaption>
+        </figure>
+        <div class="table-responsive">
+          <table class="table compare-table align-middle mb-0">
+            <caption class="visually-hidden">Comparación del proceso antes y después de Content ID</caption>
+            <thead>
+              <tr><th scope="col">Aspecto</th><th scope="col">Antes (hasta 2007)</th><th scope="col">Después (desde 2007)</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Tarea</th><td>Búsqueda manual de vídeos pirateados y retirada uno por uno.</td><td>Revisión automática de cada vídeo al subirlo.</td></tr>
+              <tr><th scope="row">Tecnología</th><td>Ninguna herramienta de detección.</td><td>Content ID compara cada vídeo con una base de datos de archivos protegidos.</td></tr>
+              <tr><th scope="row">Información que circula</th><td>Solicitudes legales individuales entre los dueños de derechos y YouTube.</td><td>Coincidencias detectadas, la regla elegida por el dueño (bloquear, rastrear o monetizar) e ingresos publicitarios.</td></tr>
+              <tr><th scope="row">Qué cambió para las personas</th><td>Mucho trabajo manual, demandas millonarias (Viacom, 2007) y vídeos de fans borrados.</td><td>Los dueños ganan dinero con los vídeos de los fans y muchos vídeos siguen publicados.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie común a todas las páginas. -->
+  <footer class="site-footer mt-auto">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
+      <span class="fw-semibold">Proyecto de Digitalización · YouTube</span>
+      <small>Roberto Daniel Radu Bucan · 2º DAM · 2026</small>
+    </div>
+  </footer>
+
+  <!-- El bundle activa los componentes con atributos data-bs-*. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+          crossorigin="anonymous"></script>
+</body>
+</html>

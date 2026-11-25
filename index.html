@@ -1,14 +1,18 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Demo Proyecto, sitio de demostración sobre diseño y desarrollo web.">
-  <title>Inicio | Demo Proyecto</title>
+  <meta name="description" content="Historia de YouTube desde su creación en 2005 y cómo presta hoy su servicio.">
+  <title>Inicio | YouTube: de 2005 a hoy</title>
   <!-- Primero Bootstrap, después los estilos del proyecto. -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
         crossorigin="anonymous">
+  <!-- Tipografías: Montserrat para los titulares y Roboto (la de YouTube) para el texto. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -18,7 +22,7 @@
   <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
     <div class="container">
       <a class="navbar-brand brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span> Demo Proyecto
+        <span class="brand-mark" aria-hidden="true"></span> YouTube: de 2005 a hoy
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
@@ -28,8 +32,9 @@
       <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto gap-md-2">
           <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="evolucion.html">Evolución</a></li>
+          <li class="nav-item"><a class="nav-link" href="organizacion.html">Organización y mercados</a></li>
+          <li class="nav-item"><a class="nav-link" href="canales.html">Canales top</a></li>
         </ul>
       </div>
     </div>
@@ -41,64 +46,190 @@
       <div class="container">
         <div class="row align-items-center g-4 g-lg-5">
           <div class="col-lg-6">
-            <h1 id="titulo-inicio" class="hero-title">Diseñamos webs <span>fáciles de usar.</span></h1>
+            <p class="eyebrow mb-3">Proyecto de Digitalización · 2026</p>
+            <h1 id="titulo-inicio" class="hero-title">De un vídeo en el zoo <span>a la mayor plataforma de vídeo.</span></h1>
             <p class="intro mt-4 mb-4">
-              Creamos sitios claros, accesibles y adaptados a cada pantalla.
+              ¿Cómo ha cambiado la tecnología la forma de trabajar, vender y generar valor de YouTube
+              desde 2005 hasta hoy? Esta web recorre su historia, sus hitos tecnológicos, su organización
+              y los mercados en los que está presente.
             </p>
-            <a class="btn btn-accent btn-lg" href="servicios.html">
-              Explorar servicios <span aria-hidden="true">→</span>
-            </a>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-accent btn-lg" href="evolucion.html">
+                Ver la evolución <span aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-ghost btn-lg" href="#historia">Empezar por la historia</a>
+            </div>
+            <ul class="chips list-unstyled mt-4 mb-0" aria-label="Temas de la web">
+              <li><a href="#historia">Historia</a></li>
+              <li><a href="evolucion.html">Hitos tecnológicos</a></li>
+              <li><a href="organizacion.html">Organización</a></li>
+              <li><a href="canales.html">Canales top</a></li>
+            </ul>
           </div>
           <div class="col-lg-6">
-            <!-- Sustituye la imagen de ejemplo y actualiza su texto alternativo. -->
-            <div class="hero-media">
-              <img src="img/estudio-demo.jpg" width="1280" height="854" class="img-fluid"
-                   alt="Pasillo de un estudio con salas acristaladas">
+            <div class="hero-media player">
+              <img src="img/youtube-logo-oficina.jpg" width="1280" height="720" class="img-fluid"
+                   alt="Logotipo de YouTube en blanco sobre un panel rojo en unas oficinas">
+              <!-- Barra decorativa que imita el reproductor de YouTube. -->
+              <div class="player-bar" aria-hidden="true">
+                <span class="player-progress"></span>
+                <span class="player-time">2005 / 2026</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Una columna en móvil y tres a partir del breakpoint md. -->
-    <section class="section-space" aria-labelledby="titulo-areas">
+    <!-- Ficha rápida de la empresa. -->
+    <section class="section-space pb-0" aria-labelledby="titulo-ficha">
       <div class="container">
-        <h2 id="titulo-areas" class="section-title mb-4">Qué hacemos</h2>
+        <h2 id="titulo-ficha" class="section-title mb-4">La empresa en un vistazo</h2>
+        <div class="row row-cols-2 row-cols-lg-4 g-3">
+          <div class="col"><div class="stat-card h-100"><span class="stat-value">2005</span><span class="stat-label">Año de fundación, en California (EE. UU.)</span></div></div>
+          <div class="col"><div class="stat-card h-100"><span class="stat-value">3</span><span class="stat-label">Fundadores: Chad Hurley, Steve Chen y Jawed Karim, ex empleados de PayPal</span></div></div>
+          <div class="col"><div class="stat-card h-100"><span class="stat-value">2006</span><span class="stat-label">Google compra YouTube. Hoy es una filial del grupo Alphabet</span></div></div>
+          <div class="col"><div class="stat-card h-100"><span class="stat-value">+100</span><span class="stat-label">Países con versión local y 80 idiomas disponibles</span></div></div>
+        </div>
+        <blockquote class="mission mt-4 mb-0">
+          <p class="mb-1">Su misión: dar voz a todas las personas y poner el mundo a su alcance.</p>
+          <footer>Según <a href="https://about.youtube/" target="_blank" rel="noopener">about.youtube</a></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Historia: orígenes y primeras etapas. -->
+    <section id="historia" class="section-space" aria-labelledby="titulo-historia">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-start">
+          <div class="col-lg-6">
+            <h2 id="titulo-historia" class="section-title mb-4">Los orígenes</h2>
+            <p>
+              YouTube nació en 2005 para resolver un problema muy concreto: compartir vídeos en internet era
+              muy difícil. Los archivos pesaban demasiado para enviarlos por correo y no existía una plataforma
+              sencilla donde subirlos.
+            </p>
+            <p>
+              Sus tres fundadores, que habían trabajado en PayPal, crearon un espacio gratuito donde cualquier
+              persona podía subir un vídeo y verlo al instante en el navegador, sin descargar nada, e incluso
+              insertarlo en blogs y redes sociales de la época como MySpace. Al principio lo usaban sobre todo
+              usuarios comunes que compartían grabaciones caseras, blogueros y aficionados.
+            </p>
+            <h3 class="h4 fw-bold mt-4">Cómo funcionaba al principio</h3>
+            <p>
+              Subir un vídeo era muy sencillo: el usuario cargaba el archivo desde su ordenador y la plataforma
+              lo convertía automáticamente para reproducirlo con Adobe Flash Player. YouTube no tenía anuncios ni
+              generaba ingresos: se financiaba con capital riesgo, como los 11,5 millones de dólares de Sequoia
+              Capital, y dejó la monetización para más adelante.
+            </p>
+            <p class="mb-0">
+              El crecimiento fue inmediato: en el verano de 2006 ya se subían unos 65.000 vídeos al día y se
+              alcanzaban 100 millones de visualizaciones diarias. En octubre de ese año, Google compró la empresa.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <figure class="video-figure mb-0">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw" title="Me at the zoo, primer vídeo de YouTube"
+                        loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <figcaption>
+                <strong>«Me at the zoo»</strong>, el primer vídeo subido a YouTube (23 de abril de 2005), de 19 segundos.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Una columna en móvil y tres a partir del breakpoint md. -->
+    <section class="section-space section-alt" aria-labelledby="titulo-hoy">
+      <div class="container">
+        <h2 id="titulo-hoy" class="section-title mb-2">Cómo presta su servicio hoy</h2>
+        <p class="intro mb-4">
+          Hoy YouTube es la mayor plataforma de vídeo del mundo y uno de los principales buscadores de internet.
+          Su modelo combina publicidad y suscripciones, y tiene tres tipos de «clientes».
+        </p>
         <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4">
           <div class="col">
             <article class="card service-card h-100">
               <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Diseño de interfaces</h3>
-                <p class="mb-0">Damos forma a pantallas que ayudan a encontrar la información y completar tareas.</p>
+                <h3 class="h5 fw-bold">Usuarios</h3>
+                <p><strong>Qué reciben:</strong> acceso gratuito a millones de vídeos, música, directos y Shorts, con recomendaciones personalizadas.</p>
+                <p class="mb-0"><strong>Cómo gana dinero YouTube:</strong> suscripciones de pago (Premium y Music) y una comisión de lo que los fans pagan a los creadores, como membresías o Super Chats.</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card service-card h-100">
               <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Desarrollo web</h3>
-                <p class="mb-0">Convertimos el diseño en páginas que se adaptan a móviles, tablets y ordenadores.</p>
+                <h3 class="h5 fw-bold">Creadores</h3>
+                <p><strong>Qué reciben:</strong> alojamiento gratuito, herramientas de edición, estadísticas de audiencia y la posibilidad de vivir de su contenido.</p>
+                <p class="mb-0"><strong>Cómo gana dinero YouTube:</strong> se queda con una parte de lo que generan sus vídeos por publicidad (normalmente el 45 % en vídeos largos) y de las aportaciones de sus seguidores (el 30 %).</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card service-card h-100">
               <div class="card-body p-4">
-                <h3 class="h5 fw-bold">Accesibilidad</h3>
-                <p class="mb-0">Revisamos la legibilidad, los contrastes y la navegación con teclado.</p>
+                <h3 class="h5 fw-bold">Anunciantes</h3>
+                <p><strong>Qué reciben:</strong> un escaparate global con miles de millones de usuarios y herramientas para mostrar su marca al público exacto.</p>
+                <p class="mb-0"><strong>Cómo gana dinero YouTube:</strong> cobra por mostrar anuncios antes, durante o junto a los vídeos, a través de Google Ads.</p>
               </div>
             </article>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Vídeo oficial elegido en la Fase 1. -->
+    <section class="section-space" aria-labelledby="titulo-video">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-5">
+            <h2 id="titulo-video" class="section-title mb-3">YouTube explicado por YouTube</h2>
+            <p class="intro mb-0">
+              Vídeo oficial del canal YouTube Creators (1 min 55 s). Lo he elegido porque explica de forma clara
+              y visual cómo funciona hoy la plataforma: sus formatos (Shorts, vídeos largos, directos y pódcasts)
+              y cómo se crea, personaliza y monetiza un canal.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="ratio ratio-16x9 video-frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/qlzSMFWs0xQ" title="Vídeo oficial de YouTube Creators sobre cómo empezar en YouTube"
+                      loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusión y enlace a la siguiente página. -->
+    <section class="section-space section-dark" aria-labelledby="titulo-conclusion">
+      <div class="container">
+        <h2 id="titulo-conclusion" class="section-title mb-4">Conclusión</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h3 class="h5 fw-bold">¿Qué ha cambiado más?</h3>
+            <p class="mb-0">YouTube pasó de ser un sitio de vídeos caseros a un gigante del entretenimiento y una industria profesional, con vídeos largos, directos, pódcasts y Shorts, un sistema de monetización que da trabajo a miles de creadores y un consumo que llega hasta la televisión del salón.</p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h5 fw-bold">¿Qué papel ha tenido la tecnología?</h3>
+            <p class="mb-0">Ha sido el motor que le ha permitido crecer sin colapsar: la infraestructura de Google, el paso a HTML5, Content ID y los algoritmos de inteligencia artificial hicieron posible gestionar millones de vídeos, proteger los derechos de autor y recomendar a cada persona lo que quiere ver.</p>
+          </div>
+        </div>
+        <a class="btn btn-accent btn-lg mt-4" href="evolucion.html">Ver los hitos tecnológicos <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
   </main>
 
-  <!-- Pie común a las tres páginas. -->
+  <!-- Pie común a todas las páginas. -->
   <footer class="site-footer mt-auto">
     <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
-      <span class="fw-semibold">Demo Proyecto</span>
-      <small>Sitio de demostración</small>
+      <span class="fw-semibold">Proyecto de Digitalización · YouTube</span>
+      <small>Roberto Daniel Radu Bucan · 2º DAM · 2026</small>
     </div>
   </footer>
 

@@ -392,6 +392,67 @@ a {
   color: var(--texto);
 }
 
+/* ---------- Por qué era gratis: pasos y cadena de valor ---------- */
+.paso-numero {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: .55rem;
+  background: var(--rojo);
+  color: #fff;
+  font-family: var(--letra-titulos);
+  font-weight: 800;
+}
+
+.tarjeta .paso-clave {
+  padding-top: .9rem;
+  border-top: 1px solid var(--borde);
+  color: var(--texto);
+}
+
+.tarjeta .paso-clave strong {
+  color: var(--rojo);
+}
+
+.cadena-valor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+}
+
+.cadena-valor li {
+  position: relative;
+  padding: .55rem 1.1rem;
+  border: 1px solid var(--borde);
+  border-radius: 2rem;
+  background: var(--tarjeta);
+  font-weight: 500;
+}
+
+/* Flecha entre pasos (decorativa: el orden ya lo da la lista <ol>). */
+.cadena-valor li + li::before {
+  content: "→";
+  position: absolute;
+  top: 50%;
+  left: -1.45rem;
+  transform: translateY(-50%);
+  color: var(--rojo);
+  font-weight: 700;
+}
+
+.cadena-valor li + li {
+  margin-left: 1.2rem;
+}
+
+.cadena-valor .cadena-final {
+  border-color: var(--rojo);
+  background: var(--rojo);
+  color: #fff;
+  font-weight: 700;
+}
+
 .tarjeta-dato {
   display: flex;
   flex-direction: column;

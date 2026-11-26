@@ -20,5 +20,4 @@ Basada en la plantilla de la asignatura (HTML5 + Bootstrap 5.3.9 por CDN), con l
 
 Abre `index.html` en el navegador (con conexión a Internet para cargar Bootstrap y los vídeos de YouTube).
 
-Para que se vean los vídeos de YouTube, ábrela con `abrir-web.bat` (levanta un servidor local en http://localhost:8000).
-Si se abre `index.html` con doble clic, YouTube muestra el «Error 153» en los vídeos insertados.
+Los vídeos de YouTube solo se reproducen si la web se abre desde un servidor, por ejemplo GitHub Pages. Con doble clic en `index.html`, YouTube muestra el «Error 153».

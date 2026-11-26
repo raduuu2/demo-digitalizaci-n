@@ -11,7 +11,7 @@ Basada en la plantilla de la asignatura (HTML5 + Bootstrap 5.3.9 por CDN), con l
 ├── index.html          Inicio: identidad, historia y servicio actual
 ├── evolucion.html      Los 6 hitos tecnológicos, infografía y esquema antes/después (Content ID)
 ├── organizacion.html   Estructura del grupo, áreas, directivos y presencia en el mundo
-├── canales.html        Canales con más suscriptores (mundo, habla hispana y España), fuentes y uso de la IA
+├── canales.html        Canales con más suscriptores: mundo, habla hispana y España
 ├── css/style.css
 └── img/                Imágenes y recursos generados con NotebookLM en la Fase 2
 ```

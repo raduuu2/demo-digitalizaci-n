@@ -400,10 +400,6 @@ a {
   font-style: italic;
 }
 
-.stat-spain {
-  background: linear-gradient(135deg, rgb(170 21 27 / 35%), rgb(241 191 0 / 20%)), var(--card);
-}
-
 .mission {
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--border);

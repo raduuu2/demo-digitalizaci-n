@@ -19,6 +19,11 @@
   --bs-body-color: var(--texto);
 }
 
+/* Al saltar a un enlace interno (#...), deja hueco para el menú fijo. */
+html {
+  scroll-padding-top: calc(var(--altura-menu) + 1.5rem);
+}
+
 body {
   padding-top: var(--altura-menu);
   background: var(--fondo);

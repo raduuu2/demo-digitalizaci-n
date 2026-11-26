@@ -16,13 +16,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="visually-hidden-focusable saltar-contenido" href="#contenido">Saltar al contenido</a>
 
   <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
-  <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
+  <nav class="navbar navbar-expand-md fixed-top menu-principal" aria-label="Navegación principal">
     <div class="container">
-      <a class="navbar-brand brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span> YouTube: de 2005 a hoy
+      <a class="navbar-brand logo" href="index.html">
+        <span class="logo-icono" aria-hidden="true"></span> YouTube: de 2005 a hoy
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
@@ -42,24 +42,24 @@
 
   <main id="contenido" tabindex="-1">
     <!-- Hero con dos columnas a partir de pantallas grandes. -->
-    <section class="hero" aria-labelledby="titulo-inicio">
+    <section class="portada" aria-labelledby="titulo-inicio">
       <div class="container">
         <div class="row align-items-center g-4 g-lg-5">
           <div class="col-lg-6">
-            <p class="eyebrow mb-3">Proyecto de Digitalización · 2026</p>
-            <h1 id="titulo-inicio" class="hero-title">De un vídeo en el zoo <span>a la mayor plataforma de vídeo.</span></h1>
-            <p class="intro mt-4 mb-4">
+            <p class="etiqueta-superior mb-3">Proyecto de Digitalización · 2026</p>
+            <h1 id="titulo-inicio" class="portada-titulo">De un vídeo en el zoo <span>a la mayor plataforma de vídeo.</span></h1>
+            <p class="introduccion mt-4 mb-4">
               ¿Cómo ha cambiado la tecnología la forma de trabajar, vender y generar valor de YouTube
               desde 2005 hasta hoy? Esta web recorre su historia, sus hitos tecnológicos, su organización
               y los mercados en los que está presente.
             </p>
             <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-accent btn-lg" href="evolucion.html">
+              <a class="btn boton-rojo btn-lg" href="evolucion.html">
                 Ver la evolución <span aria-hidden="true">→</span>
               </a>
-              <a class="btn btn-ghost btn-lg" href="#historia">Empezar por la historia</a>
+              <a class="btn boton-borde btn-lg" href="#historia">Empezar por la historia</a>
             </div>
-            <ul class="chips list-unstyled mt-4 mb-0" aria-label="Temas de la web">
+            <ul class="etiquetas-temas list-unstyled mt-4 mb-0" aria-label="Temas de la web">
               <li><a href="#historia">Historia</a></li>
               <li><a href="evolucion.html">Hitos tecnológicos</a></li>
               <li><a href="organizacion.html">Organización</a></li>
@@ -67,13 +67,13 @@
             </ul>
           </div>
           <div class="col-lg-6">
-            <div class="hero-media player">
+            <div class="portada-imagen reproductor">
               <img src="img/youtube-logo-oficina.jpg" width="1280" height="720" class="img-fluid"
                    alt="Logotipo de YouTube en blanco sobre un panel rojo en unas oficinas">
               <!-- Barra decorativa que imita el reproductor de YouTube. -->
-              <div class="player-bar" aria-hidden="true">
-                <span class="player-progress"></span>
-                <span class="player-time">2005 / 2026</span>
+              <div class="reproductor-barra" aria-hidden="true">
+                <span class="reproductor-progreso"></span>
+                <span class="reproductor-tiempo">2005 / 2026</span>
               </div>
             </div>
           </div>
@@ -82,16 +82,16 @@
     </section>
 
     <!-- Ficha rápida de la empresa. -->
-    <section class="section-space pb-0" aria-labelledby="titulo-ficha">
+    <section class="seccion pb-0" aria-labelledby="titulo-ficha">
       <div class="container">
-        <h2 id="titulo-ficha" class="section-title mb-4">La empresa en un vistazo</h2>
+        <h2 id="titulo-ficha" class="titulo-seccion mb-4">La empresa en un vistazo</h2>
         <div class="row row-cols-2 row-cols-lg-4 g-3">
-          <div class="col"><div class="stat-card h-100"><span class="stat-value">2005</span><span class="stat-label">Año de fundación, en California (EE. UU.)</span></div></div>
-          <div class="col"><div class="stat-card h-100"><span class="stat-value">3</span><span class="stat-label">Fundadores: Chad Hurley, Steve Chen y Jawed Karim, ex empleados de PayPal</span></div></div>
-          <div class="col"><div class="stat-card h-100"><span class="stat-value">2006</span><span class="stat-label">Google compra YouTube. Hoy es una filial del grupo Alphabet</span></div></div>
-          <div class="col"><div class="stat-card h-100"><span class="stat-value">+100</span><span class="stat-label">Países con versión local y 80 idiomas disponibles</span></div></div>
+          <div class="col"><div class="tarjeta-dato h-100"><span class="dato-numero">2005</span><span class="dato-texto">Año de fundación, en California (EE. UU.)</span></div></div>
+          <div class="col"><div class="tarjeta-dato h-100"><span class="dato-numero">3</span><span class="dato-texto">Fundadores: Chad Hurley, Steve Chen y Jawed Karim, ex empleados de PayPal</span></div></div>
+          <div class="col"><div class="tarjeta-dato h-100"><span class="dato-numero">2006</span><span class="dato-texto">Google compra YouTube. Hoy es una filial del grupo Alphabet</span></div></div>
+          <div class="col"><div class="tarjeta-dato h-100"><span class="dato-numero">+100</span><span class="dato-texto">Países con versión local y 80 idiomas disponibles</span></div></div>
         </div>
-        <blockquote class="mission mt-4 mb-0">
+        <blockquote class="mision mt-4 mb-0">
           <p class="mb-1">Su misión: dar voz a todas las personas y poner el mundo a su alcance.</p>
           <footer>Según <a href="https://about.youtube/" target="_blank" rel="noopener">about.youtube</a></footer>
         </blockquote>
@@ -99,11 +99,11 @@
     </section>
 
     <!-- Historia: orígenes y primeras etapas. -->
-    <section id="historia" class="section-space" aria-labelledby="titulo-historia">
+    <section id="historia" class="seccion" aria-labelledby="titulo-historia">
       <div class="container">
         <div class="row g-4 g-lg-5 align-items-start">
           <div class="col-lg-6">
-            <h2 id="titulo-historia" class="section-title mb-4">Los orígenes</h2>
+            <h2 id="titulo-historia" class="titulo-seccion mb-4">Los orígenes</h2>
             <p>
               YouTube nació en 2005 para resolver un problema muy concreto: compartir vídeos en internet era
               muy difícil. Los archivos pesaban demasiado para enviarlos por correo y no existía una plataforma
@@ -128,7 +128,7 @@
             </p>
           </div>
           <div class="col-lg-6">
-            <figure class="video-figure mb-0">
+            <figure class="video-con-pie mb-0">
               <div class="ratio ratio-16x9">
                 <iframe src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw" title="Me at the zoo, primer vídeo de YouTube"
                         loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
@@ -144,16 +144,16 @@
     </section>
 
     <!-- Una columna en móvil y tres a partir del breakpoint md. -->
-    <section class="section-space section-alt" aria-labelledby="titulo-hoy">
+    <section class="seccion seccion-gris" aria-labelledby="titulo-hoy">
       <div class="container">
-        <h2 id="titulo-hoy" class="section-title mb-2">Cómo presta su servicio hoy</h2>
-        <p class="intro mb-4">
+        <h2 id="titulo-hoy" class="titulo-seccion mb-2">Cómo presta su servicio hoy</h2>
+        <p class="introduccion mb-4">
           Hoy YouTube es la mayor plataforma de vídeo del mundo y uno de los principales buscadores de internet.
           Su modelo combina publicidad y suscripciones, y tiene tres tipos de «clientes».
         </p>
         <div class="row row-cols-1 row-cols-md-3 g-3 g-lg-4">
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Usuarios</h3>
                 <p><strong>Qué reciben:</strong> acceso gratuito a millones de vídeos, música, directos y Shorts, con recomendaciones personalizadas.</p>
@@ -162,7 +162,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Creadores</h3>
                 <p><strong>Qué reciben:</strong> alojamiento gratuito, herramientas de edición, estadísticas de audiencia y la posibilidad de vivir de su contenido.</p>
@@ -171,7 +171,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Anunciantes</h3>
                 <p><strong>Qué reciben:</strong> un escaparate global con miles de millones de usuarios y herramientas para mostrar su marca al público exacto.</p>
@@ -184,19 +184,19 @@
     </section>
 
     <!-- Vídeo sobre la evolución de YouTube. -->
-    <section class="section-space" aria-labelledby="titulo-video">
+    <section class="seccion" aria-labelledby="titulo-video">
       <div class="container">
         <div class="row g-4 g-lg-5 align-items-center">
           <div class="col-lg-5">
-            <h2 id="titulo-video" class="section-title mb-3">De 2005 a 2026 en un vídeo</h2>
-            <p class="intro mb-0">
+            <h2 id="titulo-video" class="titulo-seccion mb-3">De 2005 a 2026 en un vídeo</h2>
+            <p class="introduccion mb-0">
               «Así era YouTube en 2005… ¡y así es en 2026!», del canal JeroniZmo. Lo he elegido porque compara
               de forma visual cómo era la plataforma en sus inicios y cómo es hoy, y resume en pocos minutos
               la evolución que recorre esta web.
             </p>
           </div>
           <div class="col-lg-7">
-            <div class="ratio ratio-16x9 video-frame">
+            <div class="ratio ratio-16x9 video-marco">
               <iframe src="https://www.youtube-nocookie.com/embed/ozm5P4v6Fe4" title="Así era YouTube en 2005… ¡y así es en 2026!, vídeo de JeroniZmo"
                       loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -207,9 +207,9 @@
     </section>
 
     <!-- Conclusión y enlace a la siguiente página. -->
-    <section class="section-space section-dark" aria-labelledby="titulo-conclusion">
+    <section class="seccion seccion-oscura" aria-labelledby="titulo-conclusion">
       <div class="container">
-        <h2 id="titulo-conclusion" class="section-title mb-4">Conclusión</h2>
+        <h2 id="titulo-conclusion" class="titulo-seccion mb-4">Conclusión</h2>
         <div class="row g-4">
           <div class="col-md-6">
             <h3 class="h5 fw-bold">¿Qué ha cambiado más?</h3>
@@ -220,13 +220,13 @@
             <p class="mb-0">Ha sido el motor que le ha permitido crecer sin colapsar: la infraestructura de Google, el paso a HTML5, Content ID y los algoritmos de inteligencia artificial hicieron posible gestionar millones de vídeos, proteger los derechos de autor y recomendar a cada persona lo que quiere ver.</p>
           </div>
         </div>
-        <a class="btn btn-accent btn-lg mt-4" href="evolucion.html">Ver los hitos tecnológicos <span aria-hidden="true">→</span></a>
+        <a class="btn boton-rojo btn-lg mt-4" href="evolucion.html">Ver los hitos tecnológicos <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
 
   <!-- Pie común a todas las páginas. -->
-  <footer class="site-footer mt-auto">
+  <footer class="pie-pagina mt-auto">
     <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
       <span class="fw-semibold">Proyecto de Digitalización · YouTube</span>
       <small>Roberto Daniel Radu Bucan · 2º DAM · 2026</small>

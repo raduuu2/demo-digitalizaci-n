@@ -16,13 +16,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <a class="visually-hidden-focusable skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="visually-hidden-focusable saltar-contenido" href="#contenido">Saltar al contenido</a>
 
   <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
-  <nav class="navbar navbar-expand-md fixed-top site-nav" aria-label="Navegación principal">
+  <nav class="navbar navbar-expand-md fixed-top menu-principal" aria-label="Navegación principal">
     <div class="container">
-      <a class="navbar-brand brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span> YouTube: de 2005 a hoy
+      <a class="navbar-brand logo" href="index.html">
+        <span class="logo-icono" aria-hidden="true"></span> YouTube: de 2005 a hoy
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
@@ -41,37 +41,37 @@
   </nav>
 
   <main id="contenido" tabindex="-1">
-    <header class="page-intro">
+    <header class="cabecera-pagina">
       <div class="container">
-        <h1 class="page-title">Organización y mercados</h1>
-        <p class="intro mb-0">
+        <h1 class="titulo-pagina">Organización y mercados</h1>
+        <p class="introduccion mb-0">
           Dónde está YouTube dentro de su grupo, cómo se reparte el trabajo y en qué partes del mundo está presente.
         </p>
       </div>
     </header>
 
     <!-- Estructura del grupo. -->
-    <section class="section-space" aria-labelledby="titulo-grupo">
+    <section class="seccion" aria-labelledby="titulo-grupo">
       <div class="container">
         <div class="row g-4 g-lg-5 align-items-center">
           <div class="col-lg-5">
-            <h2 id="titulo-grupo" class="section-title mb-3">YouTube dentro de su grupo</h2>
+            <h2 id="titulo-grupo" class="titulo-seccion mb-3">YouTube dentro de su grupo</h2>
             <p>
               YouTube es una filial de Google, que a su vez pertenece al grupo tecnológico Alphabet Inc. Esta estructura
               se creó en 2015 para separar los negocios principales de internet (como el buscador, Android y YouTube)
               de los proyectos más experimentales.
             </p>
-            <p class="mb-0 text-muted-ink small">
+            <p class="mb-0 texto-gris small">
               YouTube no publica un organigrama completo. La información disponible se divide en tres niveles: su posición
               dentro de Alphabet, sus principales directivos y las grandes áreas en las que trabaja, que se deducen de sus
               portales de empleo y comunicados oficiales.
             </p>
           </div>
           <div class="col-lg-7">
-            <ol class="org-chart list-unstyled mb-0" aria-label="Estructura del grupo">
-              <li><span class="org-box">Alphabet Inc.</span><small>Grupo matriz</small></li>
-              <li><span class="org-box">Google LLC</span><small>Empresa principal</small></li>
-              <li><span class="org-box org-main">YouTube</span><small>Filial</small></li>
+            <ol class="organigrama list-unstyled mb-0" aria-label="Estructura del grupo">
+              <li><span class="organigrama-caja">Alphabet Inc.</span><small>Grupo matriz</small></li>
+              <li><span class="organigrama-caja">Google LLC</span><small>Empresa principal</small></li>
+              <li><span class="organigrama-caja organigrama-principal">YouTube</span><small>Filial</small></li>
             </ol>
           </div>
         </div>
@@ -79,12 +79,12 @@
     </section>
 
     <!-- Áreas funcionales. -->
-    <section class="section-space section-alt" aria-labelledby="titulo-areas">
+    <section class="seccion seccion-gris" aria-labelledby="titulo-areas">
       <div class="container">
-        <h2 id="titulo-areas" class="section-title mb-4">Áreas de trabajo</h2>
+        <h2 id="titulo-areas" class="titulo-seccion mb-4">Áreas de trabajo</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4">
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Ingeniería y Tecnología</h3>
                 <p class="mb-0">Infraestructura de la plataforma, servidores de vídeo, algoritmos de recomendación e inteligencia artificial.</p>
@@ -92,7 +92,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Producto y Diseño UX</h3>
                 <p class="mb-0">Nuevas funciones como Shorts, directos o YouTube Studio, y diseño de una interfaz fácil de usar.</p>
@@ -100,7 +100,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Confianza y Seguridad</h3>
                 <p class="mb-0">Normas de la comunidad, moderación de contenidos y gestión del copyright.</p>
@@ -108,7 +108,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Alianzas con Creadores</h3>
                 <p class="mb-0">Apoyo a youtubers, discográficas y medios para crecer y monetizar sus canales.</p>
@@ -116,7 +116,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Ventas y Publicidad</h3>
                 <p class="mb-0">Relación con marcas y anunciantes y venta de espacios publicitarios a través de Google Ads.</p>
@@ -124,7 +124,7 @@
             </article>
           </div>
           <div class="col">
-            <article class="card service-card h-100">
+            <article class="card tarjeta h-100">
               <div class="card-body p-4">
                 <h3 class="h5 fw-bold">Marketing y Comunicación</h3>
                 <p class="mb-0">Promoción de la marca, eventos con creadores y relación con la prensa.</p>
@@ -134,7 +134,7 @@
         </div>
         <h3 class="h4 fw-bold mt-5 mb-3">Equipo directivo</h3>
         <div class="table-responsive">
-          <table class="table compare-table align-middle mb-0">
+          <table class="table tabla-comparativa align-middle mb-0">
             <thead><tr><th scope="col">Nombre</th><th scope="col">Cargo</th></tr></thead>
             <tbody>
               <tr><th scope="row">Neal Mohan</th><td>Director ejecutivo (CEO) de YouTube desde febrero de 2023</td></tr>
@@ -149,13 +149,13 @@
     </section>
 
     <!-- Presencia geográfica. -->
-    <section class="section-space" aria-labelledby="titulo-mundo">
+    <section class="seccion" aria-labelledby="titulo-mundo">
       <div class="container">
-        <h2 id="titulo-mundo" class="section-title mb-4">Presencia en el mundo</h2>
+        <h2 id="titulo-mundo" class="titulo-seccion mb-4">Presencia en el mundo</h2>
         <div class="row g-3 g-lg-4 mb-4">
-          <div class="col-md-4"><div class="stat-card h-100"><span class="stat-value">+100</span><span class="stat-label">Países y territorios con versión local</span><span class="stat-source">Dato de la marca YouTube, 2026</span></div></div>
-          <div class="col-md-4"><div class="stat-card h-100"><span class="stat-value">80</span><span class="stat-label">Idiomas disponibles</span><span class="stat-source">Dato de la marca YouTube, 2026</span></div></div>
-          <div class="col-md-4"><div class="stat-card h-100"><span class="stat-value">España</span><span class="stat-label">Mercado estudiado en este proyecto</span></div></div>
+          <div class="col-md-4"><div class="tarjeta-dato h-100"><span class="dato-numero">+100</span><span class="dato-texto">Países y territorios con versión local</span><span class="dato-fuente">Dato de la marca YouTube, 2026</span></div></div>
+          <div class="col-md-4"><div class="tarjeta-dato h-100"><span class="dato-numero">80</span><span class="dato-texto">Idiomas disponibles</span><span class="dato-fuente">Dato de la marca YouTube, 2026</span></div></div>
+          <div class="col-md-4"><div class="tarjeta-dato h-100"><span class="dato-numero">España</span><span class="dato-texto">Mercado estudiado en este proyecto</span></div></div>
         </div>
         <div class="row g-4 g-lg-5">
           <div class="col-lg-5">
@@ -169,34 +169,34 @@
             </p>
           </div>
           <div class="col-lg-7">
-            <div class="chart-card">
+            <div class="tarjeta-grafico">
               <h3 class="h5 fw-bold mb-1">Ingresos del grupo Alphabet por región</h3>
-              <p class="small text-muted-ink mb-3">YouTube no publica sus ingresos por región; este dato es del grupo Alphabet, ejercicio 2025.</p>
-            <div class="bar-row">
-              <span class="bar-label">Estados Unidos</span>
-              <div class="bar-track" role="img" aria-label="Estados Unidos: 48,2 %"><div class="bar-fill" style="width:100.0%"></div></div>
-              <span class="bar-value">48,2 %</span>
+              <p class="small texto-gris mb-3">YouTube no publica sus ingresos por región; este dato es del grupo Alphabet, ejercicio 2025.</p>
+            <div class="barra-fila">
+              <span class="barra-nombre">Estados Unidos</span>
+              <div class="barra-fondo" role="img" aria-label="Estados Unidos: 48,2 %"><div class="barra-relleno" style="width:100.0%"></div></div>
+              <span class="barra-valor">48,2 %</span>
             </div>
-            <div class="bar-row">
-              <span class="bar-label">EMEA (Europa, Oriente Medio y África)</span>
-              <div class="bar-track" role="img" aria-label="EMEA (Europa, Oriente Medio y África): 29,1 %"><div class="bar-fill" style="width:60.4%"></div></div>
-              <span class="bar-value">29,1 %</span>
+            <div class="barra-fila">
+              <span class="barra-nombre">EMEA (Europa, Oriente Medio y África)</span>
+              <div class="barra-fondo" role="img" aria-label="EMEA (Europa, Oriente Medio y África): 29,1 %"><div class="barra-relleno" style="width:60.4%"></div></div>
+              <span class="barra-valor">29,1 %</span>
             </div>
-            <div class="bar-row">
-              <span class="bar-label">Asia-Pacífico</span>
-              <div class="bar-track" role="img" aria-label="Asia-Pacífico: 16,8 %"><div class="bar-fill" style="width:34.9%"></div></div>
-              <span class="bar-value">16,8 %</span>
+            <div class="barra-fila">
+              <span class="barra-nombre">Asia-Pacífico</span>
+              <div class="barra-fondo" role="img" aria-label="Asia-Pacífico: 16,8 %"><div class="barra-relleno" style="width:34.9%"></div></div>
+              <span class="barra-valor">16,8 %</span>
             </div>
-            <div class="bar-row">
-              <span class="bar-label">Resto de América (Canadá y Latinoamérica)</span>
-              <div class="bar-track" role="img" aria-label="Resto de América (Canadá y Latinoamérica): 5,9 %"><div class="bar-fill" style="width:12.2%"></div></div>
-              <span class="bar-value">5,9 %</span>
+            <div class="barra-fila">
+              <span class="barra-nombre">Resto de América (Canadá y Latinoamérica)</span>
+              <div class="barra-fondo" role="img" aria-label="Resto de América (Canadá y Latinoamérica): 5,9 %"><div class="barra-relleno" style="width:12.2%"></div></div>
+              <span class="barra-valor">5,9 %</span>
             </div>
-              <p class="stat-source mt-3 mb-0">Fuente: <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm" target="_blank" rel="noopener">Informe anual de Alphabet (Form 10-K), ejercicio 2025</a>.</p>
+              <p class="dato-fuente mt-3 mb-0">Fuente: <a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm" target="_blank" rel="noopener">Informe anual de Alphabet (Form 10-K), ejercicio 2025</a>.</p>
             </div>
           </div>
         </div>
-        <figure class="figure-card mt-5 mb-0">
+        <figure class="tarjeta-imagen mt-5 mb-0">
           <a href="img/esquema-organizacion-paises.jpg" target="_blank" rel="noopener">
             <img src="img/esquema-organizacion-paises.jpg" width="1800" height="1005" class="img-fluid" loading="lazy"
                  alt="Esquema con la estructura Alphabet, Google y YouTube, sus seis áreas de trabajo y su presencia en el mundo, con España como mercado estudiado">
@@ -211,7 +211,7 @@
   </main>
 
   <!-- Pie común a todas las páginas. -->
-  <footer class="site-footer mt-auto">
+  <footer class="pie-pagina mt-auto">
     <div class="container d-flex flex-wrap align-items-center justify-content-between gap-2">
       <span class="fw-semibold">Proyecto de Digitalización · YouTube</span>
       <small>Roberto Daniel Radu Bucan · 2º DAM · 2026</small>

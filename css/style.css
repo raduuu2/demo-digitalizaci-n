@@ -109,6 +109,26 @@ a {
   border-color: var(--borde);
 }
 
+/* Menú partido: en móvil, logo y botón arriba y los dos menús debajo. */
+.menu-partido .logo           { order: 1; }
+.menu-partido .navbar-toggler { order: 2; }
+.menu-partido .menu-izquierdo { order: 3; }
+.menu-partido .menu-derecho   { order: 4; }
+
+/* En escritorio, tres columnas: menú izquierdo | logo centrado | menú derecho. */
+@media (min-width: 992px) {
+  .menu-principal .menu-partido {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .menu-partido .menu-izquierdo { order: 1; justify-content: flex-start; }
+  .menu-partido .logo           { order: 2; margin: 0; justify-self: center; }
+  .menu-partido .menu-derecho   { order: 3; justify-content: flex-end; }
+}
+
 .menu-principal .navbar-toggler:focus-visible {
   outline: 3px solid var(--rojo);
   outline-offset: 2px;
@@ -756,13 +776,13 @@ a {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .menu-principal .navbar-collapse {
-    max-height: calc(100dvh - var(--altura-menu));
+    max-height: calc(50dvh - var(--altura-menu) / 2);
     overflow-y: auto;
   }
 
   .menu-principal .navbar-nav {
-    padding-block: .5rem;
+    padding-block: .25rem;
   }
 }

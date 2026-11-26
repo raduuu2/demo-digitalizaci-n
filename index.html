@@ -18,27 +18,32 @@
 <body class="d-flex flex-column min-vh-100">
   <a class="visually-hidden-focusable saltar-contenido" href="#contenido">Saltar al contenido</a>
 
-  <!-- Navegación común. Bootstrap controla el menú plegable en móviles. -->
-  <nav class="navbar navbar-expand-md fixed-top menu-principal" aria-label="Navegación principal">
-    <div class="container">
+  <!-- Cabecera con el logo en el centro y el menú partido en dos <nav>.
+       En móvil los dos menús se pliegan juntos con el mismo botón. -->
+  <header class="navbar navbar-expand-lg fixed-top menu-principal">
+    <div class="container menu-partido">
+      <nav class="collapse navbar-collapse menu-colapsable menu-izquierdo" id="menuIzquierdo" aria-label="Navegación principal (primera parte)">
+        <ul class="navbar-nav gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="evolucion.html">Evolución</a></li>
+        </ul>
+      </nav>
       <a class="navbar-brand logo" href="index.html">
         <span class="logo-icono" aria-hidden="true"></span> YouTube: de 2005 a hoy
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
-              aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto gap-md-2">
-          <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="evolucion.html">Evolución</a></li>
+      <nav class="collapse navbar-collapse menu-colapsable menu-derecho" id="menuDerecho" aria-label="Navegación principal (segunda parte)">
+        <ul class="navbar-nav gap-lg-2">
           <li class="nav-item"><a class="nav-link" href="organizacion.html">Organización y mercados</a></li>
           <li class="nav-item"><a class="nav-link" href="canales.html">Canales top</a></li>
         </ul>
-      </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target=".menu-colapsable" aria-controls="menuIzquierdo menuDerecho"
+              aria-expanded="false" aria-label="Mostrar u ocultar la navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-  </nav>
+  </header>
 
   <main id="contenido" tabindex="-1">
     <!-- Hero con dos columnas a partir de pantallas grandes. -->
